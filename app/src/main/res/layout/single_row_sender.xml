@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/background_sender"
+        android:maxWidth="310dp"
+        android:maxHeight="450dp"
+        android:minHeight="30dp"
+        tools:layout_editor_absoluteX="5dp"
+        android:layout_marginBottom="5dp"
+        tools:layout_editor_absoluteY="7dp">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="16dp" />
+
+
+        <TextView
+            android:id="@+id/sender_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ya Hello misskkkkkkkkkkkkkkkaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+            app:layout_constraintBottom_toTopOf="@id/sender_time"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="3dp"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:layout_marginTop="4dp"
+            android:inputType="textLongMessage|textMultiLine"
+            app:layout_constraintEnd_toStartOf="@+id/guideline4"
+            android:maxWidth="270dp"
+            android:minWidth="50dp"/>
+
+        <TextView
+            android:id="@+id/sender_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10:06 PM"
+            android:layout_marginBottom="4dp"
+            android:layout_marginRight="3dp"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline4"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>
